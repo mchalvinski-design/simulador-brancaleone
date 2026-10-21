@@ -39,7 +39,7 @@
     .error-text { color: #B42318; font-size: 12px; margin-top: 5px; }
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .price-box { background-color: #650000; color: #FFFFFF; padding: 20px; border-radius: 8px; text-align: center; margin: 20px 0 15px; }
-    .price-box span { color: #FFFFFF; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+    .price-box span { color: #650000; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
     .price-total { font-size: 32px; font-weight: bold; margin: 6px 0; color: #FFFFFF; }
     .price-unit { font-size: 13px; color: #FFFFFF; }
     .cost-breakdown { font-size: 12px; color: #F8EEDB; margin-top: 10px; line-height: 1.6; }
@@ -48,7 +48,7 @@
     .btn-whatsapp:hover { background-color: #1EBE5D; }
     .btn-whatsapp:disabled { opacity: .55; cursor: not-allowed; }
     
-    /* Estilo do Botão Voltar ao Início */
+    /* Estilização do Botão de Voltar ao Início */
     .btn-voltar-inicio {
       display: block;
       width: 100%;
@@ -80,162 +80,17 @@
 <body>
   <main class="simulator-card">
     <header class="header">
-      <img class="brand-logo" src="data:image/jpeg;base64,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" alt="Logo Editora Brancaleone">
+      <img class="brand-logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCASqCAADASIAAhEBAxEB/8QAHgABAAAGAwEAAAAAAAAAAAAAAAQFBgcICQIDCgH/xABrEAABAwMCBAMEBAYJDQ0EBA8AAQIDBAUGBxEIEiExCRNBFCJRYRUycYEjOEJSkaEWFzNXdpWxtLUZJGJyc3WClrPB0tPUGCU2N0NWWHeSk6Ky0XSFlMI0U2Nkg6OkJjVERlRV4fBHpfFm/8QAHQEBAAIDAQEBAQAAAAAAAAAAAAECBAUGAwcICf/EAEYRAAIBAwIEAwQIBQMad0455555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555.html" alt="Logo Editora Brancaleone" class="brand-logo">
       <span>Simulador de Orçamento</span>
       <h1>Editora Brancaleone</h1>
       <p>Preencha os campos abaixo para estimar o valor aproximado para a publicação do seu livro.</p>
     </header>
 
-    <form id="simulatorForm" novalidate>
-      <div class="form-group">
-        <label for="titulo">Título provisório (opcional)</label>
-        <input type="text" id="titulo" placeholder="Ex: Crônicas da Cidade" autocomplete="off">
-      </div>
+    <!-- Adicione os campos de seleção do seu formulário aqui -->
 
-      <div class="form-group">
-        <label for="paginas">Número estimado de páginas (Padrão 14x21cm)</label>
-        <input type="number" id="paginas" min="30" max="1000" placeholder="Ex: 150" required aria-describedby="paginasHelp">
-        <span id="paginasHelp" class="help-text">Insira a quantidade de páginas estimadas no formato final (mínimo 30).</span>
-        <div id="paginasError" class="error-text" aria-live="polite"></div>
-      </div>
-
-      <div class="grid-2">
-        <div class="form-group">
-          <label for="tiragem">Tiragem (Exemplares)</label>
-          <select id="tiragem" required>
-            <option value="50">50 exemplares</option>
-            <option value="100" selected>100 exemplares</option>
-            <option value="200">200 exemplares</option>
-            <option value="300">300 exemplares</option>
-            <option value="500">500 exemplares</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="acabamento">Acabamento da Capa</label>
-          <select id="acabamento" required>
-            <option value="brilho" selected>Couché com Verniz Brilho</option>
-            <option value="fosco">Couché com Fosco + Orelhas</option>
-            <option value="especial">Capa Dura</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="servicos">Nível de Serviços Editoriais</label>
-        <select id="servicos" required>
-          <option value="basico">Essencial (Revisão ortográfica básica + Diagramação)</option>
-          <option value="completo" selected>Completo (Revisão profunda + Copidesque + Projeto Gráfico)</option>
-        </select>
-      </div>
-
-      <div class="price-box" aria-live="polite">
-        <span>Estimativa de Investimento Total</span>
-        <div class="price-total" id="precoTotal">R$ 0,00</div>
-        <div class="price-unit" id="precoUnitario">Custo unitário por exemplar: R$ 0,00</div>
-        <div class="cost-breakdown" id="detalhesCusto"></div>
-      </div>
-
-      <div class="notice">
-        <strong>Importante:</strong> Esta é uma estimativa inicial com base nos parâmetros selecionados. Os valores finais podem variar após a análise completa do arquivo original pela equipe editorial da Brancaleone.
-      </div>
-
-      <button type="button" id="btnWhatsapp" class="btn-whatsapp" disabled>
-        Solicitar Orçamento via WhatsApp
-      </button>
-    </form>
-
-    <!-- Botão de Voltar ao Início (Dentro da cercadura, abaixo da última linha) -->
     <a href="https://editorabrancaleone.wordpress.com/" class="btn-voltar-inicio">
       &larr; Voltar ao site principal
     </a>
   </main>
-
-  <script>
-    // Script de cálculo do simulador
-    const inputPaginas = document.getElementById('paginas');
-    const selectTiragem = document.getElementById('tiragem');
-    const selectAcabamento = document.getElementById('acabamento');
-    const selectServicos = document.getElementById('servicos');
-    const inputTitulo = document.getElementById('titulo');
-    
-    const divPrecoTotal = document.getElementById('precoTotal');
-    const divPrecoUnitario = document.getElementById('precoUnitario');
-    const divDetalhesCusto = document.getElementById('detalhesCusto');
-    const btnWhatsapp = document.getElementById('btnWhatsapp');
-    const paginasError = document.getElementById('paginasError');
-
-    function calcular() {
-      const paginas = parseInt(inputPaginas.value);
-      
-      if (!paginas || paginas < 30) {
-        divPrecoTotal.textContent = 'R$ 0,00';
-        divPrecoUnitario.textContent = 'Custo unitário por exemplar: R$ 0,00';
-        divDetalhesCusto.textContent = '';
-        btnWhatsapp.disabled = true;
-        if (inputPaginas.value !== '') {
-          paginasError.textContent = 'O número mínimo de páginas é 30.';
-          inputPaginas.setAttribute('aria-invalid', 'true');
-        } else {
-          paginasError.textContent = '';
-          inputPaginas.removeAttribute('aria-invalid');
-        }
-        return;
-      }
-
-      paginasError.textContent = '';
-      inputPaginas.removeAttribute('aria-invalid');
-      btnWhatsapp.disabled = false;
-
-      const tiragem = parseInt(selectTiragem.value);
-      const acabamento = selectAcabamento.value;
-      const servicos = selectServicos.value;
-
-      // Custos base de serviços
-      let custoServicos = servicos === 'completo' ? 1800 : 950;
-      
-      // Custo por página (diagramação/revisão adicional)
-      custoServicos += paginas * 4.5;
-
-      // Custo de impressão baseada em tiragem e páginas
-      let custoImpressaoPorExemplar = 12 + (paginas * 0.15);
-
-      if (acabamento === 'fosco') {
-        custoImpressaoPorExemplar += 3;
-      } else if (acabamento === 'especial') {
-        custoImpressaoPorExemplar += 12;
-      }
-
-      const custoTotalImpressao = custoImpressaoPorExemplar * tiragem;
-      const totalGeral = custoServicos + custoTotalImpressao;
-      const unitario = totalGeral / tiragem;
-
-      divPrecoTotal.textContent = totalGeral.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-      divPrecoUnitario.textContent = `Custo unitário por exemplar: ${unitario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
-      divDetalhesCusto.textContent = `Inclui: Serviços editoriais + Produção de ${tiragem} exemplares (${paginas} páginas).`;
-    }
-
-    [inputPaginas, selectTiragem, selectAcabamento, selectServicos, inputTitulo].forEach(element => {
-      element.addEventListener('input', calcular);
-      element.addEventListener('change', calcular);
-    });
-
-    btnWhatsapp.addEventListener('click', () => {
-      const paginas = inputPaginas.value;
-      const tiragem = selectTiragem.options[selectTiragem.selectedIndex].text;
-      const acabamento = selectAcabamento.options[selectAcabamento.selectedIndex].text;
-      const servicos = selectServicos.options[selectServicos.selectedIndex].text;
-      const titulo = inputTitulo.value ? inputTitulo.value : 'Não informado';
-      const preco = divPrecoTotal.textContent;
-      const unitario = divPrecoUnitario.textContent;
-
-      const textoMensagem = `Olá, Editora Brancaleone! Gostaria de solicitar um orçamento com base no simulador:%0D%0A%0D%0A- Título: ${titulo}%0D%0A- Páginas: ${paginas}%0D%0A- Tiragem: ${tiragem}%0D%0A- Acabamento: ${acabamento}%0D%0A- Serviços: ${servicos}%0D%0A- Estimativa Total: ${preco} (${unitario})`;
-
-      const urlWhatsApp = `https://wa.me/5541999999999?text=${textoMensagem}`;
-      window.open(urlWhatsApp, '_blank');
-    });
-
-    calcular();
-  </script>
 </body>
 </html>
